@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1f21;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #3a3d41;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #5c5f64;
+    animation: rgbAnimation 2s infinite;
+}
+
+input[type="text"], input[type="number"] {
+    border-radius: 16px;
+    border: 1px solid #3a3d41;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #3a3d41;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+select {
+    border-radius: 16px;
+    border: 1px solid #3a3d41;
+    background-color: #3a3d41;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #3a3d41;
+}
+
+th {
+    background-color: #3a3d41;
+}
+
+td ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+td li {
+    cursor: pointer;
+}
+
+td li.selected {
+    background-color: #5c5f64;
+}
+
+@keyframes rgbAnimation {
+    0% {
+        background-color: rgb(142, 45, 226);
+    }
+    33% {
+        background-color: rgb(245, 48, 71);
+    }
+    66% {
+        background-color: rgb(32, 227, 178);
+    }
+    100% {
+        background-color: rgb(142, 45, 226);
+    }
+}

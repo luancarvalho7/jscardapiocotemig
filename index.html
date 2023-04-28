@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio</title>
+</head>
+
+<body>
+  <h1>Cardápio</h1>
+  <select id="weekday">
+        <option value="0">Segunda-feira</option>
+        <option value="1">Terça-feira</option>
+        <option value="2">Quarta-feira</option>
+        <option value="3">Quinta-feira</option>
+        <option value="4">Sexta-feira</option>
+    </select>
+  <input type="text" id="menuItem" placeholder="Digite o item do cardápio">
+  <button id="addItem">Adicionar</button>
+  <button id="editItem" disabled>Editar</button>
+  <button id="deleteItem" disabled>Excluir</button>
+  <table id="menuTable">
+    <thead>
+      <tr>
+        <th>Segunda-feira</th>
+        <th>Terça-feira</th>
+        <th>Quarta-feira</th>
+        <th>Quinta-feira</th>
+        <th>Sexta-feira</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-day="0"></td>
+        <td data-day="1"></td>
+        <td data-day="2"></td>
+        <td data-day="3"></td>
+        <td data-day="4"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Calculadora de IMC</h1>
+  <label for="weight">Peso (kg):</label>
+  <input type="number" id="weight" step="0.1" min="0">
+  <br>
+  <label for="height">Altura (m):</label>
+  <input type="number" id="height" step="0.01" min="0">
+  <br>
+  <button id="calculateIMC">Calcular IMC</button>
+  <p id="imcResult"></p>
+</body>
+<script src="script.js"> </script>
+</html>
